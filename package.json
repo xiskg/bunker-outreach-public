@@ -1,0 +1,30 @@
+{
+  "name": "bunker-outreach",
+  "version": "1.0.0",
+  "description": "Reviewed public export of a self-hosted outreach workflow with an isolated fictional demo",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "bun server.js",
+    "demo": "DEMO_MODE=true bun server.js",
+    "build": "bun --cwd client run --bun build",
+    "test": "bun test tests/smoke.test.js"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "0.3.14",
+    "axios": "^1.21.1",
+    "bcryptjs": "^3.0.3",
+    "cheerio": "^1.2.0",
+    "cors": "^2.8.6",
+    "dotenv": "^16.6.1",
+    "express": "^4.22.3",
+    "express-rate-limit": "^8.7.5",
+    "jsonwebtoken": "^9.0.3",
+    "multer": "^2.5.0",
+    "nodemailer": "^10.6.1",
+    "pdf-parse": "^2.4.5",
+    "pg": "^8.23.1"
+  },
+  "devDependencies": {},
+  "packageManager": "bun@1.4.4"
+}
